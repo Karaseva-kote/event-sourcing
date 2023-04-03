@@ -1,0 +1,17 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Statistic Page</title>
+
+<body>
+<p> Avg Duration: <span th:text="${avgDuration}"></span> seconds.</p>
+<p> Avg Frequency: <span th:text="${avgFrequency}"></span> visits.</p>
+<table>
+    <th:block th:each="enters : ${entersByDay}">
+        <tr>
+            <td><span th:text="${enters.key}"></span>: <span th:text="${enters.value}"></span> visits</td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

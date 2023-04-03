@@ -1,0 +1,33 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Manager Page</title>
+
+<body>
+<table>
+    <tr>
+        <td>
+            Input ID:
+            <form method="POST" action="/manager/get_subscription_info">
+                <input type="text" name="subId" autofocus>
+                <button type="submit">Show Info</button>
+            </form>
+        </td>
+        <td>
+            Input ID:
+            <form method="POST" action="/manager/prolong_subscription">
+                <input type="text" name="subId" autofocus>
+                <button type="submit">Prolong</button>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <form method="GET" action="/manager/new_subscription">
+                <button type="submit">Create New Subscription</button>
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

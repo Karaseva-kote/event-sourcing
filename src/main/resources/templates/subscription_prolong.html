@@ -1,0 +1,19 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Subscription Prolong</title>
+
+<body>
+<table>
+    <tr>
+        <td>
+            Input count days for prolong subscription <span th:text="${subId}"></span>
+            <form method="POST" action="/manager/prolong_subscription_days">
+                <input type="text" name="days" autofocus>
+                <button type="submit">Prolong</button>
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Turnstile Page</title>
+
+<body>
+<table>
+    <tr>
+        <td>
+            Input Client ID:
+            <form method="POST" action="/turnstile/enter">
+                <input type="text" name="subId" autofocus>
+                <button type="submit">Enter</button>
+            </form>
+        </td>
+        <td>
+            Input Client ID:
+            <form method="POST" action="/turnstile/exit">
+                <input type="text" name="subId" autofocus>
+                <button type="submit">Exit</button>
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

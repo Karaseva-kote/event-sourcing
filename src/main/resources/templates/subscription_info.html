@@ -1,0 +1,18 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Subscription Info</title>
+
+<body>
+<table>
+    <th:block th:each="event : ${events}">
+        <tr>
+            <td th:text="${event.toString()}"/>
+        </tr>
+    </th:block>
+</table>
+<form method="GET" action="/manager">
+    <button type="submit">OK</button>
+</form>
+</body>
+</html>
